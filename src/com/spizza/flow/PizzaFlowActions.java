@@ -55,8 +55,13 @@ public class PizzaFlowActions {
 	}
 
 	public boolean checkDeliveryArea(String zipCode) {
-		//LOGGER.warn("TODO: Zaimplementować metodę checkDeliveryArea().");
-		return "75075".equals(zipCode);
+		
+		
+		
+		if(Integer.parseInt(zipCode) < 60000){
+			return false;
+		}
+		return true;
 	}
 
 }
